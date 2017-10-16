@@ -47,7 +47,12 @@ namespace blk {
     // Prints a line of the block (0 is the line of the reference
     // point).
     void printLine(std::ostream& os, int i) const;
-    
+
+    static void _printLine(const Expr& e,
+		           std::ostream& os, int i) {
+      e->printLine(os, i);
+    }
+
   public:
 
     // This defines the space filling caracter.

@@ -2,7 +2,6 @@
 
 #include <blkBlock.hpp>
 
-
 namespace blk {
 
   // This factory creates an expression... which is a debug block.
